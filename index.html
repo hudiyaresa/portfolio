@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapping Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Mapping Portfolio</h1>
+      <p>by Hudiya Resa</p>
+      <button id="explore-btn">Explore More</button>
+    </div>
+  </section>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <h2><a href="#">Mapping Portfolio</a></h2>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="about-content">
+        <h3>About Me</h3>
+        <p>Welcome to my mapping portfolio! I specialize in creating interactive and visually stunning maps for various applications. With a passion for geography and data visualization, I bring maps to life.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="content-projects">
+        <div class="projects-grid">
+          <h3>Projects</h3>
+          <div class="project-list">
+            <!-- Project Cards as Articles -->
+            <article class="project-card">
+              <h4>Cassava Planting Plan Map</h4>
+              <img src="assets/img/rencana_tanam_cassava.png" alt="Leaflet Map" class="thumbnail" onclick="openImage('assets/img/rencana_tanam_cassava.png', 'Cassava Planting Plan Map.')">
+              <p>This project was carried out by selecting areas within former, unproductive Industrial Plantation Forests (HTI). The selection focused on zones with gentle slopes, suitable for cassava cultivation based on agronomic requirements. Once suitable areas were identified, spatial blocking was conducted, including the layout of planned planting rows optimized for cassava planting mechanization.</p>
+            </article>
+            <article class="project-card">
+              <h4>Imagery Block Score Card for Palm Oil Areas</h4>
+              <img src="assets/img/block_scorecard.jpg" alt="SKT Map" class="thumbnail" onclick="openImage('assets/img/block_scorecard.jpg', 'Block Scorecard Map')">
+              <p>
+This project involves the creation of drone aerial orthophotos for my client. Our offerings include drone aerial orthophotography, land cover analysis, hectare statements of location, palm counting, infrastructure mapping, and layout design for print-out purposes.</p>
+            </article>
+            <article class="project-card">
+              <h4>SKT Map Plan</h4>
+              <img src="assets/img/peta_rencana_skt.jpg" alt="SKT Map" class="thumbnail" onclick="openImage('assets/img/peta_rencana_skt.jpg', 'SKT Map')">
+              <p>The objective of this project was to produce a detailed landcover classification and spatial block design for a proposed plasma plantation area. The process began by utilizing the available land bank to design plantation blocks, carefully aligning block naming conventions with those of adjacent core plantation blocks to maintain operational coherence. The initial block design was further refined through spatial subdivision to allocate areas for road infrastructure and planting zones. Each planting zone was then subdivided into 2-hectare units to streamline the application process for individual land ownership certificates (SHM) for future plasma farmers.</p>
+            </article>
+            <article class="project-card">
+              <h4>Leaflet Covid-19 Ketapang Map</h4>
+              <img src="assets/img/leaflet.png" alt="Leaflet Map" class="thumbnail" onclick="openImage('assets/img/leaflet.png', 'Leaflet Map.')">
+              <p>This project is a web-based leaflet choropleth map visualization that displays the distribution of COVID-19 cases across villages and districts in Ketapang Regency, West Kalimantan. The map includes information about village and district data, employee data, and assists management in visually estimating the probability of COVID-19 spread.</p>
+            </article>
+            <article class="project-card">
+              <h4>Topography Map</h4>
+              <img src="assets/img/peta_topografi.jpg" alt="Leaflet Map" class="thumbnail" onclick="openImage('assets/img/peta_topografi.jpg', 'Topography Map.')">
+              <p>This project involves the development of a detailed topographic map derived from Digital Elevation Model (DEM) data for the Birang area under the management of PT TRH in East Kalimantan. The DEM was processed to generate slope information, expressed in percentage (%), to better understand the terrain characteristics of the region.
+
+The final map layout includes essential geographic features such as administrative boundaries, river networks, and road infrastructure, providing a comprehensive spatial overview. This map is designed to support field surveys and facilitate quick interpretation of the area’s topography, enhancing operational planning and decision-making for the company.</p>
+            </article>
+            <article class="project-card hidden">
+              <h4>DEM Analysis</h4>
+              <img src="assets/img/dem_analysis.jpg" alt="Leaflet Map" class="thumbnail" onclick="openImage('assets/img/dem_analysis.jpg', 'DEM Map.')">
+              <p>Using drone-captured orthophotos, a Digital Surface Model (DSM) will be generated. By overlaying the orthophoto, DSM, and an existing Digital Elevation Model (DEM), the analysis will identify the natural flow paths and lowest elevation points. This integrated elevation analysis will support the planning and alignment of canals, ensuring they follow optimal drainage routes based on the natural topography.</p>
+            </article>
+            <!-- Hidden Projects -->
+            <!-- <article class="project-card hidden"> -->
+              <!-- <h4>Project 6</h4>
+              <p>Description of the sixth mapping project.</p>
+            </article>
+            <article class="project-card hidden">
+              <h4>Project 7</h4>
+              <p>Description of the seventh mapping project.</p>
+            </article> -->
+          </div>
+          <button id="read-more-btn">Read More</button>
+        </div>
+        <!-- Tools & Skills as Aside -->
+        <aside class="aside-tools-skills">
+          <img src="assets/img/skills.png" width="15" alt="Skills Icon">
+          <h3>Tools & Skills</h3>
+          <div class="skills-category">
+            <h4>Geospatial Software</h4>
+            <ul>
+              <li>ArcGIS</li>
+              <li>QGIS</li>
+              <li>ENVI</li>
+              <li>Global Mapper</li>
+              <li>Google Earth Engine (GEE)</li>
+              <li>Trimble eCognition Oil Palm App</li>
+              <li>Leaflet</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4>Database & Data Processing</h4>
+            <ul>
+              <li>Query & Database Processing</li>
+              <li>Image & Satellite Processing</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4>Programming Languages</h4>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Basic Linux Scripting</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4>Frameworks & Tools</h4>
+            <ul>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>Laravel</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4>Survey & Mapping</h4>
+            <ul>
+              <li>Geodetic & Navigation GPS (Garmin, Trimble Geo7x)</li>
+              <li>Base Station (Trimble R9s)</li>
+              <li>Total Station</li>
+              <li>Topography Survey</li>
+              <li>Watershed Analysis</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4>Aerial Imagery & Drone</h4>
+            <ul>
+              <li>DJI Drone Pilot</li>
+              <li>Aerial Imagery Processing (Agisoft Photoscan Pro)</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>If you'd like to collaborate or have any questions, feel free to reach out!</p>
+      <form action="https://formspree.io/f/myzwjjnl" method="POST">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required autocomplete="off">
+        <textarea name="message" placeholder="Your Message" required autocomplete="off"></textarea>
+        <input type="text" name="honeypot" style="display: none;"> <!-- for spam protection -->
+        <input type="hidden" name="to" value="loeffy1234@gmail.com"> <!-- hidden email -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mapping Portfolio - Hudiya Resa. All rights reserved.</p>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/hudiya-resa/">LinkedIn</a>
+      <a href="https://github.com/hudiyaresa/">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
